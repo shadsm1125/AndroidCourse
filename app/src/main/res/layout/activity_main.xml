@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/newWorld"
+        android:layout_width="wrap_content"
+        android:layout_height="@android:dimen/dialog_min_width_minor"
+        android:layout_marginBottom="330dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="top"
+        android:text="Hello Brave World"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center_horizontal"
+        android:inputType="textPersonName"
+        android:password="false"
+        android:phoneNumber="false"
+        android:shadowColor="?attr/colorPrimaryDark"
+        android:text="Animal Farm"
+        android:textColorHighlight="@android:color/holo_blue_dark"
+        android:textColorHint="?attr/colorControlHighlight"
+        android:textStyle="bold|italic"
+        app:chainUseRtl="true"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+</android.support.constraint.ConstraintLayout>
